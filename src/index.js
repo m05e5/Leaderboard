@@ -39,7 +39,7 @@ formSubmit.onclick = (e) => {
   request.open('POST', requestURL, true);
   request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
   request.onreadystatechange = function () {
-    if (request.readyState == 4 && request.status == 200) {
+    if (request.readyState === 4 && request.status === 200) {
       alert(request.responseText);
     }
   };
@@ -58,4 +58,6 @@ const init = async () => {
   await myScores.getScore();
   drawScore(myScores);
 };
+/* eslint-disable*/
 onload = init();
+/* eslint-enable */

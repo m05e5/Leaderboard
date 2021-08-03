@@ -16,6 +16,7 @@ export default class Scores {
         } else {
           myResolve('Error');
         }
+        myReject('Error');
       };
       request.send();
     });
