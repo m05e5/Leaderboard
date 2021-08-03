@@ -8,7 +8,7 @@ Here is an app where you can add your different names and scores and see the lis
 
 ## Live Demo
 
-this is link to our live Demo [Live Demo](https://m05e5.github.io/Leaderboard/hit-the-API/index.html)
+this is link to our live Demo [Live Demo](https://m05e5.github.io/Leaderboard/)
 ## Built With
 
 - Javascript
