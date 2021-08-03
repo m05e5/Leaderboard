@@ -12,7 +12,7 @@
       <section class="score-head">
         <div class="refresh-section">
           <h2>Recent scores</h2>
-          <button type="button" class="btn black-border">Refresh</button>
+          <button type="button" id="refreshBtn" class="btn black-border">Refresh</button>
         </div>
         <ul class="scores" id="scores">
 
@@ -22,10 +22,11 @@
         <h2>Add your score</h2>
         <form>
           <input type="text" name="name" id="name" class="black-border form-input">
-          <input type="text" name="score" id="score" class ="black-border form-input">
-          <input type="submit" value="Submit" class="btn black-border submit-btn">
+          <input type="number" name="score" id="score" class ="black-border form-input">
+          <input type="submit" value="Submit" id="form-submit" class="btn black-border submit-btn">
         </form>
       </section>
-    </div>
+    </div> 
+    <script src="index.js"></script>
 </body>
 </html>
