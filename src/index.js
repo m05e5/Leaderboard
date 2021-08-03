@@ -4,7 +4,7 @@ import _ from 'lodash';
 import './style.css';
 import Scores from './scores';
 
-function updateScore() {
+const updateScore = () => {
   const myScores = new Scores();
   let i = 0;
   const scores = document.getElementById('scores');
