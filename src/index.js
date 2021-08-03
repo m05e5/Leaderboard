@@ -1,8 +1,11 @@
+/*eslint-disable*/
 import _ from 'lodash';
+/* eslint-enable */
 import './style.css';
 import Scores from './scores';
-function updateScore () {
-const myScores = new Scores();
+
+function updateScore() {
+  const myScores = new Scores();
   let i = 0;
   const scores = document.getElementById('scores');
   scores.classList.add('black-border');
@@ -13,7 +16,7 @@ const myScores = new Scores();
     }
     i += 1;
     li.classList.add('score');
-    li.innerHTML = `<p>${score.name}: ${score.score}</p>`
+    li.innerHTML = `<p>${score.name}: ${score.score}</p>`;
     scores.appendChild(li);
   });
 }
