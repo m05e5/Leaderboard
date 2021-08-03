@@ -19,5 +19,5 @@ const updateScore = () => {
     li.innerHTML = `<p>${score.name}: ${score.score}</p>`;
     scores.appendChild(li);
   });
-}
+};
 updateScore();
