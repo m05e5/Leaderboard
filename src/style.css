@@ -1,0 +1,72 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  width: 40vw;
+}
+
+.content {
+  display: flex;
+  margin: 3rem;
+  justify-content: space-around;
+}
+
+.refresh-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: white;
+  box-shadow: 2px 2px;
+  margin-right: 1rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.black-border {
+  border: 2px solid black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  margin-left: auto;
+}
+
+.form-input {
+  margin: 10px;
+}
+
+.dark-bg {
+  background-color: rgb(218, 218, 218);
+}
+
+.scores {
+  list-style-type: none;
+  padding: 1px;
+  margin: 1px;
+}
+
+.score p {
+  margin: 1px;
+}
+
+.score {
+  padding: 1px;
+}
+
+.liName {
+  width: 3rem;
+}

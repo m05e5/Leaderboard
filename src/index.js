@@ -1,12 +1,20 @@
 import _ from 'lodash';
-
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
+import './style.css';
+import Scores from './scores';
+function updateScore () {
+const myScores = new Scores();
+  let i = 0;
+  const scores = document.getElementById('scores');
+  scores.classList.add('black-border');
+  myScores.scoreList.forEach((score) => {
+    const li = document.createElement('li');
+    if (i % 2 === 0) {
+      li.className = 'dark-bg';
+    }
+    i += 1;
+    li.classList.add('score');
+    li.innerHTML = `<p>${score.name}: ${score.score}</p>`
+    scores.appendChild(li);
+  });
 }
-
-document.body.appendChild(component());
+updateScore();
