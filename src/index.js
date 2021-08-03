@@ -5,7 +5,7 @@ import './style.css';
 import Scores from './scores';
 
 const request = new XMLHttpRequest();
-const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/e7Fuv9HQd45w43wbbQ4v/scores';
+const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/tZwzoWVLBuKSP71uLKIA/scores';
 const refreshBtn = document.getElementById('refreshBtn');
 const formSubmit = document.getElementById('form-submit');
 
@@ -44,10 +44,11 @@ formSubmit.onclick = (e) => {
     }
   };
   request.send(params);
+  setTimeout(async () => {
+    await myScores.getScore();
+    drawScore(myScores);
+  }, 5000);
 };
-
-myScores.getScore();
-drawScore(myScores);
 
 refreshBtn.onclick = async () => {
   await myScores.getScore();

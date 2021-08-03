@@ -1,5 +1,5 @@
 const request = new XMLHttpRequest();
-const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/e7Fuv9HQd45w43wbbQ4v/scores';
+const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/tZwzoWVLBuKSP71uLKIA/scores';
 
 export default class Scores {
   constructor() {
