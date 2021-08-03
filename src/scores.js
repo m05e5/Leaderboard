@@ -7,16 +7,15 @@ export default class Scores {
   }
 
   async getScore() {
-    const scorePromis = new Promise((myResolve, myReject) => {
+    const scorePromis = new Promise((myResolve) => {
       request.open('GET', requestURL);
       request.onload = () => {
-        if (request.status == 200) {
+        if (request.status === 200) {
           myResolve(request.response);
           console.log(request.response);
         } else {
           myResolve('Error');
         }
-        myReject('Error');
       };
       request.send();
     });
