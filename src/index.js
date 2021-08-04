@@ -8,6 +8,7 @@ const request = new XMLHttpRequest();
 const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/tZwzoWVLBuKSP71uLKIA/scores';
 const refreshBtn = document.getElementById('refreshBtn');
 const formSubmit = document.getElementById('form-submit');
+const x = document.getElementById('toast');
 
 const myScores = new Scores();
 
@@ -26,7 +27,7 @@ const drawScore = (scoress) => {
     }
     i += 1;
     li.classList.add('score');
-    li.innerHTML = `<p>${score.user}: ${score.score}</p>`;
+    li.innerHTML = `<p>${score.user} :</p><p> ${score.score}</p>`;
     scores.appendChild(li);
   });
 };
@@ -44,6 +45,8 @@ formSubmit.onclick = (e) => {
     }
   };
   request.send(params);
+  x.className = 'show';
+  setTimeout(() => { x.className = x.className.replace('show', ''); }, 4000);
   setTimeout(async () => {
     await myScores.getScore();
     drawScore(myScores);
@@ -51,6 +54,8 @@ formSubmit.onclick = (e) => {
 };
 
 refreshBtn.onclick = async () => {
+  x.className = 'show';
+  setTimeout(() => { x.className = x.className.replace('show', ''); }, 3000);
   await myScores.getScore();
   drawScore(myScores);
 };
