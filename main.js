@@ -1,3 +1,4 @@
+/* eslint-disabled*/
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -17845,7 +17846,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scores__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scores */ "./src/scores.js");
 /*eslint-disable*/
 
-/* eslint-enable */
 
 
 
@@ -17911,7 +17911,6 @@ const init = async () => {
 };
 /* eslint-disable*/
 onload = init();
-/* eslint-enable */
 })();
 
 /******/ })()

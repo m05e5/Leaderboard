@@ -16,9 +16,9 @@ this is link to our live Demo [Live Demo](https://m05e5.github.io/Leaderboard/)
 - CSS
 
 
-## Usage
+## install
 
-- Clone the repo 
+- git clone https://github.com/m05e5/Leaderboard.git
 - open it on your IDE
 - open the terminal and run 'npm install'
 - then run 'npm run build'

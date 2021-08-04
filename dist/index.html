@@ -7,6 +7,26 @@
   <title>Document</title>
 <script defer src="main.js"></script></head>
 <body>
-  
+  <h1><b>Leaderboard</b></h1>
+    <div class="content">
+      <section class="score-head">
+        <div class="refresh-section">
+          <h2>Recent scores</h2>
+          <button type="button" id="refreshBtn" class="btn black-border">Refresh</button>
+        </div>
+        <ul class="scores" id="scores">
+
+        </ul>
+      </section>
+      <section class="add-score">
+        <h2>Add your score</h2>
+        <form>
+          <input type="text" name="name" id="name" placeholder="Your name" class="black-border form-input">
+          <input type="number" name="score" id="score" placeholder="Your score"  class ="black-border form-input">
+          <input type="submit" value="Submit" id="form-submit" class="btn black-border submit-btn">
+          <div id="toast">Loading...</div>
+        </form>
+      </section>
+    </div> 
 </body>
 </html>
