@@ -26,7 +26,7 @@ const drawScore = (scoress) => {
     }
     i += 1;
     li.classList.add('score');
-    li.innerHTML = `<p>${score.user}: ${score.score}</p>`;
+    li.innerHTML = `<p>${score.user} :</p><p> ${score.score}</p>`;
     scores.appendChild(li);
   });
 };
@@ -44,6 +44,9 @@ formSubmit.onclick = (e) => {
     }
   };
   request.send(params);
+  const x = document.getElementById("toast");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
   setTimeout(async () => {
     await myScores.getScore();
     drawScore(myScores);
