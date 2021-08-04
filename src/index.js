@@ -44,9 +44,9 @@ formSubmit.onclick = (e) => {
     }
   };
   request.send(params);
-  const x = document.getElementById("toast");
-  x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  const x = document.getElementById('toast');
+  x.className = 'show';
+  setTimeout(() => { x.className = x.className.replace('show', ''); }, 3000);
   setTimeout(async () => {
     await myScores.getScore();
     drawScore(myScores);
